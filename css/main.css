@@ -71,8 +71,8 @@ main a {
     grid-template-rows: 50px 110px 100px;
   }
   main img {
-    height: 45px;
-    width: 45px;
+    height: 35px;
+    width: 35px;
     margin-right: 15px;
   }
   .call {
@@ -90,7 +90,7 @@ main a {
   }
   .zap,
   .tel {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 @media (max-width: 600px) {
