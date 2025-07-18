@@ -1,0 +1,159 @@
+.logo {
+  height: 170px;
+  margin-left: 35px;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+.b {
+  display: flex;
+  width: 300px;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+  margin: 60px 40px;
+}
+.attention img {
+  margin-left: 40px;
+  align-items: flex-start;
+}
+.attention h2 {
+  margin-right: 40px;
+}
+.atendemos {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 20px 0px;
+}
+.pin {
+  width: 45px;
+  margin-right: 15px;
+}
+
+.beneficios {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  padding: 10px 0px;
+}
+.speed {
+  width: 50px;
+  margin-right: 15px;
+}
+
+/*styles*/
+
+header {
+  font-size: 25px;
+  font-family: "Noto Sans";
+}
+
+.b {
+  font-size: 32px;
+  font-weight: 500;
+  background: linear-gradient(180deg, #fcbc19 28%, #7d5a00 100%);
+  border-radius: 5px;
+  border-color: none;
+  text-decoration: none;
+  color: #000000;
+  box-shadow: 0px 16px 16px -8px rgba(0, 0, 0, 0.25);
+}
+
+.attention {
+  background-color: #07385c;
+}
+.attention h2 {
+  color: #ffffff;
+  font-weight: 400;
+}
+.atendemos,
+.beneficios {
+  text-align: center;
+}
+.atendemos::after {
+  content: "";
+  height: 3px;
+  width: 50px;
+  background: #074979;
+  border-radius: 5px;
+  position: absolute;
+  top: 95%;
+}
+
+@media (max-width: 1350px) {
+  .logo {
+    height: 140px;
+  }
+  .b {
+    font-size: 25px;
+    width: 260px;
+    height: 60px;
+    margin: 40px 40px;
+  }
+  .attention h2 {
+    font-size: 30px;
+    padding: 0px 0px;
+  }
+  .attention img {
+    width: 35px;
+  }
+}
+@media (max-width: 840px) {
+  .logo {
+    height: 100px;
+  }
+  .b {
+    font-size: 20px;
+    width: 180px;
+    height: 50px;
+    margin: 20px 20px;
+  }
+  .attention h2 {
+    font-size: 25px;
+    padding: 0px 0px;
+  }
+  .attention img {
+    width: 35px;
+  }
+}
+@media (max-width: 600px) {
+  .logo {
+    height: 100px;
+  }
+  .b {
+    font-size: 18px;
+    width: 170px;
+    height: 45px;
+    margin: 20px 20px;
+  }
+  .attention h2 {
+    font-size: 20px;
+    padding: 0px 0px;
+  }
+  .attention img {
+    width: 35px;
+  }
+}
+@media (max-width: 425px) {
+  .attention h2 {
+    font-size: 16px;
+  }
+  .attention img {
+    width: 25px;
+  }
+}
+@media (max-width: 375px) {
+  .attention h2 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 320px) {
+  .beneficios {
+    display: none;
+  }
+  .atendemos::after {
+    display: none;
+  }
+}

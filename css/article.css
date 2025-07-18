@@ -1,0 +1,133 @@
+article {
+  margin-top: 136px;
+  padding-bottom: 1px;
+}
+.servico {
+  padding-top: 40px;
+  font-size: 50px;
+  text-align: center;
+  position: relative;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 40px;
+  margin-left: 80px;
+}
+.grid h2 {
+  margin-top: 40px;
+  position: relative;
+}
+.grid p {
+  margin-top: 15px;
+}
+.serv8 {
+  place-self: center;
+}
+.b {
+  place-self: center;
+}
+
+/* style */
+article {
+  background-color: #07385c;
+}
+
+.servico::before {
+  content: "";
+  width: 214px;
+  height: 10px;
+  border-radius: 2px;
+  background-color: #074979;
+  position: absolute;
+  left: 350px;
+  bottom: 30px;
+}
+.servico::after {
+  content: "";
+  width: 214px;
+  height: 10px;
+  border-radius: 2px;
+  background-color: #074979;
+  position: absolute;
+  right: 350px;
+  bottom: 30px;
+}
+
+.grid h2::before {
+  content: "";
+  width: 10px;
+  height: 40px;
+  border-radius: 2px;
+  background-color: #c28b00;
+  position: absolute;
+  left: -15px;
+}
+
+.grid h2 {
+  font-size: 30px;
+}
+.grid p {
+  font-size: 25px;
+}
+
+@media (max-width: 1350px) {
+  article {
+    margin-top: 0px;
+  }
+  .servico::after,
+  .servico::before {
+    display: none;
+  }
+  .grid {
+    padding: 0px;
+  }
+}
+@media (max-width: 840px) {
+  .servico {
+    padding-top: 20px;
+    font-size: 40px;
+  }
+  .grid {
+    margin-top: 10px;
+  }
+  .grid h2 {
+    font-size: 25px;
+  }
+  .grid h2::before {
+    height: 30px;
+  }
+  .grid p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .grid p {
+    display: none;
+  }
+}
+@media (max-width: 425px) {
+  .grid {
+    margin: 0px 40px;
+  }
+}
+@media (max-width: 375px) {
+  .servico {
+    padding-top: 10px;
+    font-size: 23px;
+  }
+  .grid {
+    margin: 0px 40px;
+  }
+  .grid h2 {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  .grid h2::before {
+    height: 20px;
+    width: 8px;
+  }
+}

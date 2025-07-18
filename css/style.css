@@ -1,0 +1,33 @@
+@import url(header.css);
+@import url(main.css);
+@import url(article.css);
+@import url(aside.css);
+@import url(footer.css);
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #012743;
+  font-family: "Nunito Sans", "Noto Sans", Arial, Helvetica, sans-serif;
+  margin: 0px;
+  color: #ffffff;
+  overflow-x: hidden;
+  max-width: 1600px;
+  margin: 0px auto;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+h2 {
+  margin: 0px;
+}

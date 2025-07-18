@@ -1,0 +1,97 @@
+aside {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 40px 80px;
+}
+.sobre {
+  grid-column: 1/-1;
+  position: relative;
+}
+
+.sobreimg,
+.textsobre {
+  margin-top: 40px;
+}
+.textsobre {
+  margin-left: 25px;
+}
+.b {
+  grid-column: 2;
+  grid-row: 3;
+}
+/* style */
+
+.sobre {
+  text-align: center;
+  font-size: 50px;
+}
+
+.sobre::before {
+  content: "";
+  width: 214px;
+  height: 10px;
+  border-radius: 2px;
+  background-color: #074979;
+  position: absolute;
+  left: 250px;
+  bottom: 30px;
+}
+.sobre::after {
+  content: "";
+  width: 214px;
+  height: 10px;
+  border-radius: 2px;
+  background-color: #074979;
+  position: absolute;
+  right: 250px;
+  bottom: 30px;
+}
+
+.textsobre {
+  font-size: 25px;
+}
+
+@media (max-width: 1350px) {
+  .sobre::after,
+  .sobre::before {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .textsobre {
+    font-size: 20px;
+  }
+}
+@media (max-width: 840px) {
+  aside {
+    margin-top: 20px;
+  }
+  .sobre {
+    font-size: 40px;
+  }
+  .sobreimg {
+    display: none;
+  }
+  .textsobre {
+    margin-top: 20px;
+    grid-column: -1/1;
+  }
+  .b {
+    margin-top: 20px;
+    grid-column: -1/1;
+  }
+}
+
+@media (max-width: 425px) {
+  aside {
+    margin: 20px 10px;
+  }
+  .textsobre {
+    font-size: 15px;
+  }
+}
+@media (max-width: 375px) {
+  .sobre {
+    font-size: 23px;
+  }
+}
