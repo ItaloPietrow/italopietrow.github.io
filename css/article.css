@@ -16,7 +16,7 @@ article {
 }
 .grid h2 {
   margin-top: 40px;
-  position: relative;
+  display: flex;
 }
 .grid p {
   margin-top: 15px;
@@ -66,12 +66,12 @@ article {
 
 .grid h2::before {
   content: "";
+  display: inline-block;
   width: 10px;
   height: 40px;
   border-radius: 2px;
   background-color: #c28b00;
-  position: absolute;
-  left: -15px;
+  margin-right: 7px;
 }
 
 .grid h2 {

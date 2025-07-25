@@ -99,7 +99,6 @@ main a {
     font-size: 30px;
   }
   .call::after {
-    /* width: 380px; */
   }
 }
 @media (max-width: 425px) {
@@ -107,7 +106,6 @@ main a {
     font-size: 25px;
   }
   .call::after {
-    /* width: 320px; */
   }
 }
 @media (max-width: 375px) {
