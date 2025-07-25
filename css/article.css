@@ -26,8 +26,8 @@ article {
 }
 .imagens {
   display: flex;
-  flex-wrap: wrap;
-  place-content: center;
+  overflow-x: auto;
+  place-self: center;
 }
 .imagens img {
   margin: 20px;
