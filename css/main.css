@@ -14,6 +14,7 @@ main {
   font-size: 50px;
   display: inline-block;
   position: relative;
+  justify-self: center;
 }
 .superzap,
 .supertel {
@@ -35,7 +36,7 @@ main a {
 .call::after {
   content: "";
   height: 10px;
-  width: 630px;
+  width: 100%;
   border-radius: 5px;
   background: linear-gradient(180deg, #fcbc19 28%, #7d5a00 100%);
   position: absolute;
@@ -80,7 +81,7 @@ main a {
     font-size: 35px;
   }
   .call::after {
-    width: 450px;
+    width: 100%;
   }
   .superzap {
     margin-top: 60px;
@@ -98,7 +99,7 @@ main a {
     font-size: 30px;
   }
   .call::after {
-    width: 380px;
+    /* width: 380px; */
   }
 }
 @media (max-width: 425px) {
@@ -106,7 +107,7 @@ main a {
     font-size: 25px;
   }
   .call::after {
-    width: 320px;
+    /* width: 320px; */
   }
 }
 @media (max-width: 375px) {
@@ -125,7 +126,7 @@ main a {
   }
   .call::after {
     height: 6px;
-    width: 255px;
+    /* width: 255px; */
     bottom: -5px;
   }
   .superzap {
