@@ -98,14 +98,10 @@ main a {
   .call {
     font-size: 30px;
   }
-  .call::after {
-  }
 }
 @media (max-width: 425px) {
   .call {
     font-size: 25px;
-  }
-  .call::after {
   }
 }
 @media (max-width: 375px) {
