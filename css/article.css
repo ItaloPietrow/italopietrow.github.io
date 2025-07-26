@@ -13,6 +13,7 @@ article {
   grid-template-columns: 1fr 1fr;
   margin-top: 40px;
   margin-left: 80px;
+  gap: 25px;
 }
 .grid h2 {
   margin-top: 40px;
@@ -114,6 +115,7 @@ article {
 @media (max-width: 600px) {
   .grid {
     grid-template-columns: 1fr;
+    gap: 0px;
   }
   .grid p {
     display: none;
